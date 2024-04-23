@@ -31,13 +31,13 @@ const AboutPage = () => {
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
-            <Image
+            {/* <Image
               src={me}
               alt=""
               width={112}
               height={112}
               className="w-28 h-28 rounded-full object-cover"
-            />
+            /> */}
 
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
