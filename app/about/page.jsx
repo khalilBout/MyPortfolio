@@ -104,87 +104,135 @@ const AboutPage = () => {
               SKILLS
             </motion.h1>
             {/* SKILL LIST */}
-            <motion.div
-              initial={{ x: "-300px" }}
-              animate={isSkillRefInView ? { x: 0 } : {}}
-              className="flex gap-4 flex-wrap"
-            >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+            <div className="flex gap-4 flex-wrap overflow-hidden">
+              <motion.div
+                initial={{ x: "-300px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 0.2 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 JavaScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+              <motion.div
+                initial={{ y: "-2300px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 0.3 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 TypeScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ y: "2300px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 0.4 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 React.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                SCSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 0.5 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
+                Next Js
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 0.6 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
+                scss
+              </motion.div>
+
+              <motion.div
+                initial={{ y: "-22000px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 0.7 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Tailwind CSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 0.8 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 MongoDB
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                PostgreSQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Nest.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Spring Boot
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                GraphQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Apollo
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ y: "-2300px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 0.9 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Redux
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 1 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Framer Motion
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ y: "22000px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 1.1 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Three.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                WebGL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Webpack
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 1.2 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Vite
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Docker
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Firebase
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Git
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </motion.div>
+
+              <motion.div
+                initial={{ y: "-22000px" }}
+                animate={
+                  isSkillRefInView ? { y: 0, transition: { delay: 1.3 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
                 Figma
-              </div>
-            </motion.div>
+              </motion.div>
+              <motion.div
+                initial={{ x: "22000px" }}
+                animate={
+                  isSkillRefInView ? { x: 0, transition: { delay: 1.4 } } : {}
+                }
+                className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+              >
+                Git
+              </motion.div>
+            </div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}

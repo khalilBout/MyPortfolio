@@ -69,8 +69,8 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LOGO */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
-        <Link href="/" className=" rounded-md flex items-center justify-center">
+      <div className=" lg:flex xl:w-1/3 xl:justify-center cursor-pointer">
+        <Link href="/" className=" flex items-center justify-center">
           <Logo />
         </Link>
       </div>
@@ -101,23 +101,23 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          className="w-8 h-7 flex flex-col justify-between z-50 relative"
           onClick={() => setOpen((prev) => !prev)}
         >
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-8 h-1 bg-black rounded origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded"
+            className="w-8 h-1 bg-black rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-8 h-1 bg-black rounded origin-left"
           ></motion.div>
         </button>
         {/* MENU LIST */}
@@ -131,7 +131,7 @@ const Navbar = () => {
             {links.map((link) => (
               <motion.div
                 variants={listItemVariants}
-                className=""
+                className="cursor-pointer"
                 key={link.title}
               >
                 <Link href={link.url}>{link.title}</Link>

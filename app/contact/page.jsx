@@ -2,14 +2,16 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Lottie from "lottie-react";
-import contactAnimation from "@/animation/contact.json";
+import ContactAnimation from "@/components/contactAnimation";
+// import Lottie from "lottie-react";
+// import contactAnimation from "@/animation/contact.json";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
   const form = useRef();
+  const lottieRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -91,21 +93,25 @@ const ContactPage = () => {
         {/* TEXT CONTAINER */}
         <div className="hidden md:flex md:h-full md:w-1/2 items-center justify-center text-6xl ">
           <div className=" animation">
-            <Lottie
+            <ContactAnimation />
+
+            {/* <Lottie
               className="contact-animation"
               style={{ height: 355 }}
               animationData={contactAnimation}
-            />
+            /> */}
           </div>
         </div>
 
         <div className=" absolute top-0 right-0 -z-20  h-full w-full opacity-20 md:hidden">
-          <div className=" animation">
-            <Lottie
+          <div className="">
+            <ContactAnimation />
+            {/* <Lottie
               className="contact-animation"
               style={{ height: 355 }}
               animationData={contactAnimation}
             />
+            */}
           </div>
         </div>
       </div>

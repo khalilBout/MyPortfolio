@@ -14,13 +14,13 @@ const PortfolioPage = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="h-full mt-4 md:mt-8"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
       <div className="" ref={ref}>
-        <div className="relative  w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        {/* <div className="relative  w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
           <Image
             src={mukup}
             alt="mukup"
@@ -33,10 +33,10 @@ const PortfolioPage = () => {
           <h2 className="md:text-5xl text-3xl text-yellow-100 font-semibold">
             My Work
           </h2>
-        </div>
+        </div> */}
+        <Project />
       </div>
       {/* add component hire  */}
-      <Project />
     </motion.div>
   );
 };
